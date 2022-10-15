@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff2f2"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Tên bài hát"
+        android:fontFamily="@font/linotte_semi_bold"
+        android:textColor="#323441"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-26dp"
+        android:background="@drawable/rounded_edge"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="280dp"
+            android:text="00:00"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp"
+            android:fontFamily="@font/linotte_regular"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTimeTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="345dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginBottom="280dp"
+            android:text="00:00"
+            android:textColor="#9e9e9e"
+            android:textSize="16sp"
+            android:fontFamily="@font/linotte_regular"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="250dp" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRewind"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="120dp"
+            android:background="@null"
+            android:src="@drawable/rewind" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="100dp"
+            android:background="@null"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/imageButtonForward"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="120dp"
+            android:background="@null"
+            android:src="@drawable/forward" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewDisc"
+        android:layout_width="159dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="60dp"
+        app:srcCompat="@drawable/disc"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="206dp"
+        android:layout_height="215dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="75dp"
+        app:srcCompat="@drawable/pic" />
+</RelativeLayout>
